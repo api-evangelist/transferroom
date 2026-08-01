@@ -1,8 +1,30 @@
 aid: transferroom
 name: TransferRoom
-description: 'TransferRoom is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  TransferRoom is football's real-time transfer marketplace, connecting clubs,
+  agents and players to buy, sell and loan players and to recruit head coaches.
+  Its API delivers verified, real-time market intelligence — Expected Transfer
+  Value (xTV) benchmarks, player availability and deal-viability signals,
+  contract-expiry and estimated-salary data, agent and coach representation, and
+  head-coach ratings — returned as JSON for clubs to integrate directly into
+  their own systems (SQL databases, BI dashboards, spreadsheets and code
+  notebooks). Trusted by 800+ clubs across 130 leagues and 500+ agencies,
+  covering 130,000+ players and 7,000+ head coaches, and powering 7,500+
+  transfer deals. The API is sales-gated: technical reference (endpoints,
+  authentication, base URL) is provided to clubs on engagement and is not
+  published publicly.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.transferroom.com/hubfs/Featured-Images/TransferRoom_Homepage.jpg
 url: https://raw.githubusercontent.com/api-evangelist/transferroom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +34,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Applicative Saas
-apis: []
+- Football
+- Soccer
+- Sports
+- Transfer Market
+- Recruitment
+- Scouting
+- Market Intelligence
+- Data
+- Analytics
+apis:
+- name: TransferRoom API
+  description: >-
+    Real-time football market-intelligence API exposing valuation data
+    (Expected Transfer Value / xTV base and development values), transfer data
+    (availability signals, contract expiry, estimated salary brackets, deal
+    viability) and staff data (agent/coach representation, head-coach ratings
+    and availability) as JSON for integration into a club's BI environment.
+    Access is granted to clubs on engagement; the public technical reference is
+    limited.
+  humanURL: https://www.transferroom.com/api-docs
+  tags:
+  - Football
+  - Transfer Market
+  - Market Intelligence
+  - Data
+  properties:
+  - type: Documentation
+    url: https://www.transferroom.com/api-docs
+  - type: Blog
+    url: https://blog.transferroom.com/transferroom-api-smarter-team-building-powered-by-data
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +76,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.transferroom.com/
+- type: Documentation
+  url: https://www.transferroom.com/api-docs
+- type: Blog
+  url: https://blog.transferroom.com/
+- type: Login
+  url: https://transferroom.com/login
+- type: TermsOfService
+  url: https://www.transferroom.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.transferroom.com/privacy-policy
+- type: DomainSecurity
+  url: security/transferroom-domain-security.yml
+- type: LLMsTxt
+  url: llms/transferroom-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

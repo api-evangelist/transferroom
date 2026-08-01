@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on the TransferRoom marketing host
+host: https://www.transferroom.com
+description: >-
+  Result of probing the /.well-known/ discovery surface for the TransferRoom
+  host in apis.yml. No public API host resolves (api./data.transferroom.com did
+  not connect) and the API is sales-gated, so only the marketing host was
+  probed. None of the standard discovery documents are published — every path
+  returned 404. Recorded as an honest "none" result.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
