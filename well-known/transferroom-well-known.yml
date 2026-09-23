@@ -2,13 +2,13 @@ generated: '2026-07-21'
 method: searched
 source: live probes of /.well-known/ on the TransferRoom marketing host
 host: https://www.transferroom.com
-description: >-
-  Result of probing the /.well-known/ discovery surface for the TransferRoom
-  host in apis.yml. No public API host resolves (api./data.transferroom.com did
-  not connect) and the API is sales-gated, so only the marketing host was
-  probed. None of the standard discovery documents are published — every path
-  returned 404. Recorded as an honest "none" result.
-documents:
+description: Result of probing the /.well-known/ discovery surface for the TransferRoom host in apis.yml.
+  No public API host resolves (api./data.transferroom.com did not connect) and the API is sales-gated,
+  so only the marketing host was probed. None of the standard discovery documents are published — every
+  path returned 404. Recorded as an honest "none" result.
+hosts:
+- host: https://www.transferroom.com
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -19,3 +19,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
