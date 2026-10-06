@@ -45,7 +45,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Applicative Saas
@@ -97,6 +97,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://blog.transferroom.com/all
+  type: Blog
+- url: https://blog.transferroom.com/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://www.transferroom.com/
 - type: Documentation
