@@ -5,7 +5,7 @@
       "source": "https://blog.transferroom.com/transferroom-api-smarter-team-building-powered-by-data",
       "feed_url": "https://blog.transferroom.com/rss.xml",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "discovered"
     },
     {
@@ -37,6 +37,6 @@
       "method": "none"
     }
   ],
-  "post_count": 1,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 10,
+  "fetched": "2026-10-17T14:53:57Z"
 }
